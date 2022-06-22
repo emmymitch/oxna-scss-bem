@@ -1,0 +1,110 @@
+@use "./variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Sintony:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card *{
+    margin-bottom: 1.75rem;
+}
+
+.card{
+    margin: 0.5rem;
+    width: 18rem;
+    height: auto;
+    flex-grow: 1;
+    border: 0.09375rem solid $colour-primary;
+
+    &__img{
+        width: 100%;
+        margin: 0;
+    }
+    
+    &__body{
+        padding:1rem;
+    }
+
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__title{
+        font-family: $font-title;
+        font-size: $font-size-title;
+        align-self: flex-start;
+    }
+
+    &__tag-list{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-bottom:0;
+    }
+
+    &__tag{
+        font-family: $font-title;
+        font-size: $font-size-body;
+
+        background-color: $colour-tag-background;
+        color: $colour-tag-text;
+        border-radius: 1rem;
+        padding: 0.3125rem 1.25rem;
+        margin: 0.125rem;
+
+        &--highlight{
+            background-color: $colour-highlight;
+            color: $colour-primary;
+            font-weight: bold;
+        }
+    }
+
+    &__text{
+        font-family: $font-body;
+        font-size: $font-size-body;
+    }
+
+    &__button{
+        border: 0.09375rem solid $colour-primary;
+        margin: 0.3125rem;
+        margin-left: 0;
+        padding: 0.5rem 1.3rem;
+
+        font-size: $font-size-body;
+        font-family: $font-body;
+        font-weight: bold;
+        text-decoration: none;
+            
+        &:hover{
+            opacity: 0.5;
+        }
+        
+        &:visited{
+            text-decoration: none;
+        }
+
+        &--dark{
+            background: $colour-primary;
+            color: $colour-secondary;
+        }
+
+        &--light{
+            background-color: $colour-secondary;
+            color: $colour-primary;
+        }
+    }
+}

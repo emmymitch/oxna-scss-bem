@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Sintony:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card * {
+  margin-bottom: 1.75rem;
+}
+
+.card {
+  margin: 0.5rem;
+  width: 18rem;
+  height: auto;
+  flex-grow: 1;
+  border: 0.09375rem solid black;
+}
+.card__img {
+  width: 100%;
+  margin: 0;
+}
+.card__body {
+  padding: 1rem;
+}
+.card__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.card__title {
+  font-family: "Sintony", sans;
+  font-size: 2rem;
+  align-self: flex-start;
+}
+.card__tag-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.card__tag {
+  font-family: "Sintony", sans;
+  font-size: 0.75rem;
+  background-color: lightgrey;
+  color: grey;
+  border-radius: 1rem;
+  padding: 0.3125rem 1.25rem;
+  margin: 0.125rem;
+}
+.card__tag--highlight {
+  background-color: #00FFB2;
+  color: black;
+  font-weight: bold;
+}
+.card__text {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 0.75rem;
+}
+.card__button {
+  border: 0.09375rem solid black;
+  margin: 0.3125rem;
+  margin-left: 0;
+  padding: 0.5rem 1.3rem;
+  font-size: 0.75rem;
+  font-family: "Proza Libre", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card__button:hover {
+  opacity: 0.5;
+}
+.card__button:visited {
+  text-decoration: none;
+}
+.card__button--dark {
+  background: black;
+  color: white;
+}
+.card__button--light {
+  background-color: white;
+  color: black;
+}
