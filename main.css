@@ -34,7 +34,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
 }
 .card__title {
   font-family: "Sintony", sans;
@@ -46,6 +46,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: flex-start;
   margin-bottom: 0;
 }
 .card__tag {
@@ -66,7 +67,7 @@ main {
   font-family: "Proza Libre", sans-serif;
   font-size: 0.75rem;
 }
-.card__button {
+.card__icon {
   border: 0.09375rem solid black;
   margin: 0.3125rem;
   margin-left: 0;
@@ -76,17 +77,17 @@ main {
   font-weight: bold;
   text-decoration: none;
 }
-.card__button:hover {
+.card__icon:hover {
   opacity: 0.5;
 }
-.card__button:visited {
+.card__icon:visited {
   text-decoration: none;
 }
-.card__button--dark {
+.card__icon--dark {
   background: black;
   color: white;
 }
-.card__button--light {
+.card__icon--light {
   background-color: white;
   color: black;
 }
